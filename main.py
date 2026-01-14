@@ -1,10 +1,6 @@
 def max_number(a, b):
-    if a > b:
-        return a
-    if a < b:
-        return b
-    else:
-        return a
+    max_value = a if a>=b else b
+    print(max_value)
 
 
 def empty_function():
@@ -34,4 +30,3 @@ for number in even_numbers(user_value): # пример работы функци
     print(number)
 
 test_max_number()
-
