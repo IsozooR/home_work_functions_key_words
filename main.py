@@ -1,6 +1,6 @@
 def max_number(a, b):
-    max_value = a if a>=b else b
-    print(max_value)
+    return a if a >= b else b
+
 
 
 def empty_function():
@@ -8,9 +8,9 @@ def empty_function():
 
 
 def even_numbers(n):
-    values = [numbers for numbers in range (0, n+1) if numbers % 2 == 0]
-    for numeral in values:
-        yield numeral
+    for numbers in range(0,n +1):
+        if numbers % 2 == 0:
+            yield numbers
 
 
 def test_max_number():
